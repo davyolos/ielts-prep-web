@@ -1,4 +1,4 @@
-﻿// ============================================================================
+// ============================================================================
 // IELTS Speaking Mastery - Main Application Logic (Vercel & AI Enhanced)
 // ============================================================================
 
@@ -146,7 +146,7 @@ function renderTopicList() {
     if (item.isRealExam) {
       tag = '<span style="font-size: 0.65rem; background: rgba(59, 130, 246, 0.2); color: #60a5fa; padding: 2px 5px; border-radius: 4px; margin-right: 5px;">REAL</span>';
     } else if (item.isAIGenerated) {
-      tag = '<span style="font-size: 0.65rem; background: rgba(139, 92, 246, 0.2); color: #c084fc; padding: 2px 5px; border-radius: 4px; margin-right: 5px;">AI</span>';
+      tag = '<span style="font-size: 0.65rem; background: rgba(84, 144, 196, 0.2); color: #72aae0; padding: 2px 5px; border-radius: 4px; margin-right: 5px; border: 1px solid #2e4f73;">AI</span>';
     }
 
     el.innerHTML = `${tag}<span>${idx + 1}. ${item.category || 'Topic'}</span>`;
@@ -183,8 +183,8 @@ function displayActiveQuestion() {
   } else if (q.isAIGenerated) {
     examPill.style.display = 'inline-flex';
     examPill.innerText = '✨ AI Generated';
-    examPill.style.color = '#c084fc';
-    examPill.style.borderColor = '#c084fc';
+    examPill.style.color = '#72aae0';
+    examPill.style.borderColor = '#3d587c';
   } else {
     examPill.style.display = 'none';
   }
