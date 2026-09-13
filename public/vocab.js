@@ -1127,7 +1127,7 @@ function showPDFExportToast(wordName, htmlContent) {
     toast.style.zIndex = '9999';
     toast.style.maxWidth = '420px';
     toast.style.background = '#172033';
-    toast.style.border = '1px solid #8b5cf6';
+    toast.style.border = '1px solid #9e7935';
     toast.style.borderRadius = '10px';
     toast.style.boxShadow = '0 10px 30px rgba(0,0,0,0.6)';
     toast.style.padding = '14px 18px';
@@ -1138,14 +1138,14 @@ function showPDFExportToast(wordName, htmlContent) {
 
   toast.innerHTML = '<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 10px;">' +
     '<div>' +
-      '<div style="font-weight: 700; color: #c084fc; font-size: 0.95rem; margin-bottom: 4px;">' +
+      '<div style="font-weight: 700; color: #d6b36a; font-size: 0.95rem; margin-bottom: 4px;">' +
         '📄 Print & Save Dialog Opened' +
       '</div>' +
       '<div style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.35;">' +
         'In the print destination dropdown, select <strong>"Save as PDF"</strong> to choose where to save this file on your computer.' +
       '</div>' +
       '<div style="margin-top: 8px; display: flex; gap: 8px;">' +
-        '<button id="directDownloadHtmlBtn" style="background: rgba(139, 92, 246, 0.2); border: 1px solid #8b5cf6; color: #c084fc; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; cursor: pointer; font-weight: 600;">' +
+        '<button id="directDownloadHtmlBtn" style="background: #251e15; border: 1px solid #8a6534; color: #e5c997; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; cursor: pointer; font-weight: 600;">' +
           '💾 Direct Download (.html)' +
         '</button>' +
       '</div>' +
@@ -1713,7 +1713,7 @@ function showMasterPDFToast(topicTitle, masterHtml) {
     toast.style.zIndex = '9999';
     toast.style.maxWidth = '460px';
     toast.style.background = '#172033';
-    toast.style.border = '2px solid #8b5cf6';
+    toast.style.border = '2px solid #9e7935';
     toast.style.borderRadius = '10px';
     toast.style.boxShadow = '0 12px 35px rgba(0,0,0,0.7)';
     toast.style.padding = '16px 20px';
@@ -1726,14 +1726,14 @@ function showMasterPDFToast(topicTitle, masterHtml) {
 
   toast.innerHTML = '<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 10px;">' +
     '<div>' +
-      '<div style="font-weight: 800; color: #c084fc; font-size: 1rem; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">' +
+      '<div style="font-weight: 800; color: #d6b36a; font-size: 1rem; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">' +
         '<span>📚 30-Word Master PDF Ready</span>' +
       '</div>' +
       '<div style="font-size: 0.83rem; color: #cbd5e1; line-height: 1.4;">' +
         'In your browser print dialog, select <strong>"Save as PDF"</strong> to save the complete 30-word booklet to your computer.' +
       '</div>' +
       '<div style="margin-top: 10px; display: flex; gap: 8px;">' +
-        '<button id="directDownloadMasterHtmlBtn" style="background: linear-gradient(135deg, #8b5cf6, #6366f1); border: none; color: #fff; padding: 6px 12px; border-radius: 4px; font-size: 0.78rem; cursor: pointer; font-weight: 700;">' +
+        '<button id="directDownloadMasterHtmlBtn" style="background: linear-gradient(180deg, #b89146, #8f6c27); border: none; color: #fff; padding: 6px 12px; border-radius: 4px; font-size: 0.78rem; cursor: pointer; font-weight: 700;">' +
           '💾 Direct Download All 30 Words (.html)' +
         '</button>' +
       '</div>' +

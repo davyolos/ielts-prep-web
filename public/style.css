@@ -1,38 +1,37 @@
 /* ==========================================================================
-   MEDIEVAL AESTHETIC THEME & SCHOLARLY PALETTE
+   AUTHENTIC MEDIEVAL SCHOLARLY THEME (NO NEON GLOWS • ZERO PURPLE)
+   Aesthetic: Antique Parchment, Dark Walnut, Forged Brass, Deep Leather
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg-primary: #0a0907;
-  --bg-secondary: #13110e;
-  --bg-card: #1a1713;
-  --bg-card-hover: #24201a;
-  --border-color: rgba(212, 175, 55, 0.24);
-  --border-highlight: #d4af37;
-  --text-primary: #f5eedc;
-  --text-secondary: #c5bba8;
-  --text-muted: #8d806d;
-  --primary: #c5a059;
-  --primary-hover: #dfbe73;
-  --accent-emerald: #10b981;
-  --accent-amber: #d97706;
-  --accent-rose: #b91c1c;
-  --accent-purple: #8b5cf6;
-  --gold-glow: 0 0 16px rgba(212, 175, 55, 0.28);
-  --radius-lg: 12px;
-  --radius-md: 8px;
+  --bg-primary: #0e0d0b;
+  --bg-secondary: #15130f;
+  --bg-card: #1c1813;
+  --bg-card-hover: #252019;
+  --border-color: #4a3a22;
+  --border-highlight: #9e7935;
+  --text-primary: #eee5d3;
+  --text-secondary: #baa990;
+  --text-muted: #7d6e59;
+  --primary: #b89047;
+  --primary-hover: #cca65e;
+  --accent-emerald: #3d7949;
+  --accent-amber: #b87b28;
+  --accent-rose: #8f2929;
+  --radius-lg: 10px;
+  --radius-md: 6px;
   --radius-sm: 4px;
-  --shadow-sm: 0 3px 12px rgba(0, 0, 0, 0.7);
-  --shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.9);
+  --shadow-sm: 0 3px 8px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.85);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Cormorant Garamond', 'Plus Jakarta Sans', serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 h1, h2, h3, h4, 
@@ -46,35 +45,30 @@ h1, h2, h3, h4,
 .top-nav-link,
 .btn {
   font-family: 'Cinzel', serif;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 
 body {
   background-color: var(--bg-primary);
-  background-image: 
-    radial-gradient(ellipse at 50% 0%, rgba(197, 160, 89, 0.07) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 80%, rgba(139, 92, 246, 0.04) 0%, transparent 50%);
   color: var(--text-primary);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Gold Foil Text Shimmer */
+/* Crisp Metallic Gold Heading (NO NEON GLOW) */
 .gold-shimmer {
-  background: linear-gradient(135deg, #fff7df 0%, #d4af37 50%, #997328 100%);
+  background: linear-gradient(180deg, #fcedd0 0%, #cca65e 55%, #8f6d2e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(212, 175, 55, 0.35);
   font-weight: 800;
 }
 
 /* Header */
 header {
-  background-color: rgba(18, 15, 12, 0.94);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.28);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.75);
+  background-color: #14120e;
+  border-bottom: 1px solid #4a3a1f;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.65);
   padding: 0.75rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -90,26 +84,26 @@ header {
   gap: 1rem;
 }
 
-/* Royal Heraldic Crest Logo */
+/* Authentic Medallion Crest Logo (NO NEON GLOW) */
 .brand-crest-logo {
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #d4af37;
-  box-shadow: 0 0 16px rgba(212, 175, 55, 0.45);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 2px solid #9e7935;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.65), inset 0 0 0 1px #594420;
+  transition: transform 0.2s ease;
 }
 
 .brand-crest-logo:hover {
-  transform: scale(1.08) rotate(3deg);
-  box-shadow: 0 0 24px rgba(212, 175, 55, 0.75);
+  transform: scale(1.05);
+  border-color: #cca65e;
 }
 
 .brand-text h1 {
   font-size: 1.25rem;
   font-weight: 800;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
 .brand-text span {
@@ -117,8 +111,8 @@ header {
 }
 
 .brand-subtitle {
-  font-size: 0.75rem;
-  color: #c5bba8;
+  font-size: 0.76rem;
+  color: #a89980;
   letter-spacing: 0.02em;
 }
 
@@ -127,7 +121,7 @@ header {
   display: flex;
   gap: 0.5rem;
   margin-left: 1.5rem;
-  border-left: 1px solid rgba(212, 175, 55, 0.2);
+  border-left: 1px solid #3d301b;
   padding-left: 1.25rem;
 }
 
@@ -145,15 +139,15 @@ header {
 
 .top-nav-link:hover {
   color: #f5eedc;
-  border-color: rgba(212, 175, 55, 0.35);
-  background: rgba(197, 160, 89, 0.08);
+  border-color: #6e542b;
+  background: #1c1813;
 }
 
 .top-nav-link.active {
-  background: linear-gradient(135deg, rgba(197, 160, 89, 0.2) 0%, rgba(212, 175, 55, 0.1) 100%);
-  border-color: #d4af37;
-  color: #fff;
-  box-shadow: 0 0 12px rgba(212, 175, 55, 0.25);
+  background: #241e16;
+  border: 1px solid #9e7935;
+  color: #fcedd0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .header-tools {
@@ -171,9 +165,9 @@ header {
   font-size: 0.82rem;
   font-family: 'Cinzel', serif;
   font-weight: 700;
-  background: rgba(197, 160, 89, 0.12);
-  color: #e5c158;
-  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: #211c14;
+  color: #d6b36a;
+  border: 1px solid #574423;
 }
 
 /* Layout */
@@ -210,7 +204,7 @@ header {
   top: 8px;
   right: 12px;
   font-size: 0.75rem;
-  color: rgba(212, 175, 55, 0.3);
+  color: #634d2a;
   pointer-events: none;
 }
 
@@ -233,8 +227,8 @@ header {
 }
 
 .phase-tab {
-  background: #14120f;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  background: #14110d;
+  border: 1px solid #3d2f1a;
   border-radius: var(--radius-sm);
   padding: 0.85rem 1rem;
   color: var(--text-primary);
@@ -243,19 +237,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
 }
 
 .phase-tab:hover {
-  border-color: #d4af37;
-  background: #1c1813;
+  border-color: #9e7935;
+  background: #1d1812;
   transform: translateX(3px);
 }
 
 .phase-tab.active {
-  background: linear-gradient(135deg, rgba(197, 160, 89, 0.25) 0%, rgba(139, 92, 246, 0.12) 100%);
-  border-color: #d4af37;
-  box-shadow: 0 0 14px rgba(212, 175, 55, 0.3);
+  background: #251e15;
+  border: 1px solid #9e7935;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
 }
 
 .phase-title {
@@ -285,19 +279,19 @@ header {
 }
 .question-scroll-list::-webkit-scrollbar-thumb,
 .word-sidebar-list::-webkit-scrollbar-thumb {
-  background: #5c4d32;
+  background: #4a3a22;
   border-radius: 4px;
 }
 .question-scroll-list::-webkit-scrollbar-thumb:hover,
 .word-sidebar-list::-webkit-scrollbar-thumb:hover {
-  background: #d4af37;
+  background: #9e7935;
 }
 
 .topic-badge-item {
   padding: 0.7rem 0.85rem;
   border-radius: var(--radius-sm);
-  background: #14120f;
-  border: 1px solid rgba(212, 175, 55, 0.18);
+  background: #14110d;
+  border: 1px solid #382b17;
   font-size: 0.88rem;
   color: var(--text-secondary);
   cursor: pointer;
@@ -307,7 +301,7 @@ header {
 
 .topic-badge-item:hover, .topic-badge-item.active {
   color: #fff;
-  border-color: #d4af37;
+  border-color: #9e7935;
   background: #201a13;
 }
 
@@ -335,8 +329,8 @@ header {
 }
 
 .prompt-body {
-  background: #12100d;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  background: #110f0c;
+  border: 1px solid #382b17;
   border-radius: var(--radius-sm);
   padding: 1.5rem;
   margin-bottom: 1.25rem;
@@ -362,10 +356,10 @@ header {
   width: 100%;
   margin-top: 1rem;
   background: #110f0c;
-  border: 1px dashed rgba(212, 175, 55, 0.35);
+  border: 1px dashed #5c4724;
   border-radius: var(--radius-sm);
   padding: 0.85rem;
-  color: #e5c158;
+  color: #d6b265;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.05rem;
   resize: vertical;
@@ -374,8 +368,8 @@ header {
 
 /* Timer Bar */
 .timer-bar {
-  background: #14120f;
-  border: 1px solid rgba(212, 175, 55, 0.25);
+  background: #14110d;
+  border: 1px solid #4a3a1f;
   border-radius: var(--radius-sm);
   padding: 1rem 1.25rem;
   display: flex;
@@ -388,7 +382,7 @@ header {
   font-family: 'Cinzel', serif;
   font-size: 2.1rem;
   font-weight: 800;
-  color: #e5c158;
+  color: #d6b265;
   line-height: 1;
 }
 
@@ -407,7 +401,7 @@ header {
   align-items: center;
 }
 
-/* Medieval Styled Buttons */
+/* Authentic Medieval Buttons (NO NEON GLOWS • NO PURPLE) */
 .btn {
   padding: 0.65rem 1.3rem;
   border-radius: var(--radius-sm);
@@ -420,74 +414,77 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
   user-select: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
 }
 
+/* Primary: Forged Brass / Antique Gold */
 .btn-primary {
-  background: linear-gradient(135deg, #c5a059 0%, #997a3d 100%);
-  color: #0d0b08;
-  border: 1px solid #e5c158;
-  box-shadow: 0 2px 10px rgba(197, 160, 89, 0.35);
+  background: linear-gradient(180deg, #b89146 0%, #8f6c27 100%);
+  color: #0f0c08;
+  border: 1px solid #d4af5f;
   font-weight: 800;
 }
 .btn-primary:hover {
-  background: linear-gradient(135deg, #dfbe73 0%, #c5a059 100%);
-  box-shadow: 0 0 18px rgba(212, 175, 55, 0.6);
+  background: linear-gradient(180deg, #c7a154 0%, #a17930 100%);
   transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.65);
 }
 
+/* Danger: Crimson Wax Seal */
 .btn-danger {
-  background: linear-gradient(135deg, #991b1b 0%, #7f1d1d 100%);
-  border: 1px solid #ef4444;
-  color: #fff;
-  box-shadow: 0 0 15px rgba(239, 68, 68, 0.35);
+  background: linear-gradient(180deg, #591b1b 0%, #3d1010 100%);
+  border: 1px solid #8f2d2d;
+  color: #f7d7d7;
 }
 .btn-danger:hover {
-  background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+  background: linear-gradient(180deg, #6e2222 0%, #4f1515 100%);
 }
 
+/* Outline: Iron & Brass */
 .btn-outline {
-  background: rgba(20, 18, 14, 0.7);
-  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: #171410;
+  border: 1px solid #544223;
   color: var(--text-primary);
 }
 .btn-outline:hover {
-  background: rgba(197, 160, 89, 0.15);
-  border-color: #d4af37;
+  background: #241e17;
+  border-color: #9e7935;
   color: #fff;
 }
 
+/* Emerald: Deep Forest Tapestry */
 .btn-emerald {
-  background: linear-gradient(135deg, #15803d 0%, #166534 100%);
-  border: 1px solid #4ade80;
-  color: #fff;
-  box-shadow: 0 2px 10px rgba(22, 101, 52, 0.35);
+  background: linear-gradient(180deg, #1e4526 0%, #122c18 100%);
+  border: 1px solid #3a7546;
+  color: #e3f5e6;
 }
 .btn-emerald:hover {
-  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
-  box-shadow: 0 0 16px rgba(74, 222, 128, 0.5);
+  background: linear-gradient(180deg, #275931 0%, #1a3d21 100%);
 }
 
+/* AI Button: Burnt Amber Gold (NO PURPLE) */
 .btn-ai {
-  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
-  border: 1px solid #a78bfa;
-  color: #fff;
-  box-shadow: 0 2px 10px rgba(139, 92, 246, 0.35);
+  background: linear-gradient(180deg, #3d2b14 0%, #26190a 100%);
+  border: 1px solid #a67329;
+  color: #f2cb85;
 }
 .btn-ai:hover {
-  background: linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%);
+  background: linear-gradient(180deg, #4d371a 0%, #33220e 100%);
+  border-color: #c78f3a;
 }
 
+/* PDF Export Button: Deep Leather & Burnished Bronze (NO PURPLE) */
 .btn-pdf-export {
-  background: linear-gradient(135deg, #581c87 0%, #3b0764 100%);
-  border: 1px solid #c084fc;
-  color: #f5eedc;
-  box-shadow: 0 2px 10px rgba(88, 28, 135, 0.4);
+  background: linear-gradient(180deg, #2e2015 0%, #1c130c 100%);
+  border: 1px solid #8a6534;
+  color: #e5c997;
 }
 .btn-pdf-export:hover {
-  background: linear-gradient(135deg, #6b21a8 0%, #4c1d95 100%);
-  box-shadow: 0 0 16px rgba(192, 132, 252, 0.5);
+  background: linear-gradient(180deg, #3d2c1e 0%, #291d12 100%);
+  border-color: #b08548;
+  color: #fff;
 }
 
 /* Speech Area */
@@ -508,7 +505,7 @@ header {
   align-items: center;
   gap: 0.4rem;
   font-size: 0.82rem;
-  color: var(--accent-rose);
+  color: #d67070;
   font-weight: 700;
   font-family: 'Cinzel', serif;
 }
@@ -517,32 +514,25 @@ header {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--accent-rose);
-  animation: live-pulse 1.4s infinite;
-}
-
-@keyframes live-pulse {
-  0% { transform: scale(0.95); opacity: 0.8; }
-  50% { transform: scale(1.4); opacity: 0.3; }
-  100% { transform: scale(0.95); opacity: 0.8; }
+  background: #8f2929;
 }
 
 .speech-textarea {
   width: 100%;
   min-height: 130px;
   background: #110f0c;
-  border: 1px solid rgba(212, 175, 55, 0.25);
+  border: 1px solid #4a3a1f;
   border-radius: var(--radius-sm);
   padding: 1rem;
-  color: #f5eedc;
+  color: #eee5d3;
   font-size: 1.05rem;
   line-height: 1.6;
   resize: vertical;
 }
 .speech-textarea:focus {
   outline: none;
-  border-color: #d4af37;
-  box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+  border-color: #9e7935;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6), 0 0 0 1px #9e7935;
 }
 
 /* Dashboard Grid & Hero */
@@ -556,8 +546,8 @@ header {
 }
 
 .dashboard-hero {
-  background: linear-gradient(135deg, #1c1813 0%, #12100d 100%);
-  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: linear-gradient(180deg, #1c1813 0%, #12100d 100%);
+  border: 1px solid #574423;
   border-radius: var(--radius-lg);
   padding: 2.5rem;
   display: flex;
@@ -574,7 +564,7 @@ header {
   right: 15px;
   bottom: -25px;
   font-size: 9rem;
-  color: rgba(212, 175, 55, 0.05);
+  color: rgba(184, 144, 71, 0.05);
   pointer-events: none;
 }
 
@@ -607,7 +597,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
   position: relative;
   cursor: pointer;
   box-shadow: var(--shadow-sm);
@@ -619,22 +609,22 @@ header {
   top: 10px;
   right: 14px;
   font-size: 0.8rem;
-  color: rgba(212, 175, 55, 0.28);
+  color: #634d2a;
 }
 
 .module-card:hover:not(.disabled) {
-  border-color: #d4af37;
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.25);
-  background: #211c15;
+  border-color: #9e7935;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  background: #231e17;
 }
 
 .module-card.featured {
-  border-color: rgba(212, 175, 55, 0.4);
+  border-color: #6e542b;
 }
 
 .module-card.disabled {
-  opacity: 0.68;
+  opacity: 0.65;
   cursor: not-allowed;
 }
 
@@ -650,8 +640,8 @@ header {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: rgba(197, 160, 89, 0.15);
-  border: 1px solid rgba(212, 175, 55, 0.4);
+  background: #241c12;
+  border: 1px solid #634d2b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -666,15 +656,15 @@ header {
 }
 
 .status-active {
-  background: rgba(16, 185, 129, 0.15);
-  color: #6ee7b7;
-  border: 1px solid rgba(16, 185, 129, 0.4);
+  background: #18261a;
+  color: #82c48c;
+  border: 1px solid #38613c;
 }
 
 .status-soon {
-  background: rgba(100, 116, 139, 0.15);
-  color: #94a3b8;
-  border: 1px solid rgba(100, 116, 139, 0.3);
+  background: #1e1b17;
+  color: #9e907a;
+  border: 1px solid #3d3427;
 }
 
 .module-body h3 {
@@ -708,7 +698,7 @@ header {
 }
 .module-features li::before {
   content: "✦";
-  color: #d4af37;
+  color: #b89047;
   font-size: 0.75rem;
 }
 
@@ -751,7 +741,7 @@ header {
   top: 10px;
   right: 14px;
   font-size: 0.85rem;
-  color: rgba(212, 175, 55, 0.3);
+  color: #634d2a;
 }
 
 .vocab-topic-picker {
@@ -764,10 +754,10 @@ header {
 
 .vocab-select {
   background: #110f0c;
-  border: 1px solid rgba(212, 175, 55, 0.35);
+  border: 1px solid #574423;
   border-radius: var(--radius-sm);
   padding: 0.5rem 0.85rem;
-  color: #f5eedc;
+  color: #eee5d3;
   font-family: 'Cinzel', serif;
   font-size: 0.88rem;
   font-weight: 600;
@@ -777,23 +767,23 @@ header {
 
 .vocab-select:focus {
   outline: none;
-  border-color: #d4af37;
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.35);
+  border-color: #9e7935;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 0 0 1px #9e7935;
 }
 
 .progress-track {
   width: 100%;
   height: 8px;
-  background: #12100d;
+  background: #110f0c;
   border-radius: 999px;
   overflow: hidden;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid #3d2f19;
   margin-top: 0.35rem;
 }
 
 .progress-bar-fill {
   height: 100%;
-  background: linear-gradient(90deg, #c5a059 0%, #10b981 100%);
+  background: linear-gradient(90deg, #8f6c27 0%, #3d7949 100%);
   width: 0%;
   transition: width 0.35s ease;
 }
@@ -831,7 +821,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  border-bottom: 1px solid #3d301b;
   padding-bottom: 0.65rem;
   margin-bottom: 0.65rem;
 }
@@ -852,7 +842,7 @@ header {
   padding: 0.65rem 0.85rem;
   border-radius: var(--radius-sm);
   background: #110f0c;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid #382b17;
   color: var(--text-primary);
   cursor: pointer;
   transition: all 0.15s ease;
@@ -860,19 +850,19 @@ header {
 }
 
 .word-list-row:hover {
-  border-color: #d4af37;
+  border-color: #9e7935;
   background: #1c1813;
   transform: translateX(3px);
 }
 
 .word-list-row.active {
-  background: linear-gradient(135deg, rgba(197, 160, 89, 0.25), rgba(139, 92, 246, 0.15));
-  border-color: #d4af37;
-  box-shadow: 0 0 12px rgba(212, 175, 55, 0.35);
+  background: #251e15;
+  border: 1px solid #9e7935;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
 }
 
 .word-list-row.completed {
-  border-left: 3px solid var(--accent-emerald);
+  border-left: 3px solid #3d7949;
 }
 
 .word-row-left {
@@ -913,7 +903,7 @@ header {
   color: var(--text-muted);
 }
 .word-status-icon.done {
-  color: var(--accent-emerald);
+  color: #82c48c;
 }
 
 .word-practice-right {
@@ -941,16 +931,16 @@ header {
 
 .word-meaning-box {
   background: #110f0c;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid #382b17;
   border-radius: var(--radius-sm);
   padding: 1rem 1.15rem;
 }
 
 .colloc-pill {
   display: inline-block;
-  background: rgba(197, 160, 89, 0.12);
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  color: #e5c158;
+  background: #211b13;
+  border: 1px solid #574423;
+  color: #d6b36a;
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-sm);
   font-size: 0.85rem;
@@ -966,7 +956,7 @@ header {
 
 .sentence-category-block {
   background: #12100d;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid #382b17;
   border-radius: var(--radius-sm);
   padding: 1.25rem;
 }
@@ -977,7 +967,7 @@ header {
   align-items: center;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  border-bottom: 1px solid #332715;
   font-family: 'Cinzel', serif;
   font-weight: 700;
   font-size: 0.95rem;
@@ -997,33 +987,34 @@ header {
   font-weight: 600;
 }
 
-/* Scriptorium Sentence Writing Tablet */
+/* Scriptorium Sentence Writing Tablet (NO NEON GLOW) */
 .sentence-textarea {
   background: #0d0b08;
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  border: 1px solid #4a3a1f;
   border-radius: var(--radius-sm);
   padding: 0.85rem 1.1rem;
-  color: #f5eedc;
+  color: #eee5d3;
   font-size: 1.1rem;
   line-height: 1.55;
   min-height: 68px;
   resize: vertical;
   width: 100%;
   font-family: 'Cormorant Garamond', serif;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .sentence-textarea:focus {
   outline: none;
-  border-color: #d4af37;
-  box-shadow: 0 0 14px rgba(212, 175, 55, 0.35);
+  border-color: #9e7935;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6), 0 0 0 1px #9e7935;
   background: #14110d;
 }
 
 /* Speech Challenge Card */
 .speech-challenge-card {
-  background: linear-gradient(135deg, #1c1813 0%, #12100d 100%);
-  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: linear-gradient(180deg, #1c1813 0%, #12100d 100%);
+  border: 1px solid #574423;
   border-radius: var(--radius-lg);
   padding: 2.2rem;
   box-shadow: var(--shadow-lg);
@@ -1037,41 +1028,32 @@ header {
   right: 15px;
   bottom: -20px;
   font-size: 8rem;
-  color: rgba(212, 175, 55, 0.04);
+  color: rgba(184, 144, 71, 0.04);
   pointer-events: none;
 }
 
-/* 24-Hour Daily Topic Cycle Banner */
+/* 24-Hour Daily Topic Cycle Banner (Matte Antique Leather & Brass, NO NEON) */
 .daily-cycle-pill {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  background: rgba(20, 17, 13, 0.9);
-  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: #1c1813;
+  border: 1px solid #634e29;
   padding: 0.4rem 0.95rem;
   border-radius: 9999px;
   font-size: 0.84rem;
-  box-shadow: 0 0 16px rgba(212, 175, 55, 0.2);
-  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .daily-pulse-dot {
   width: 8px;
   height: 8px;
-  background: #10b981;
+  background: #4a9e57;
   border-radius: 50%;
-  box-shadow: 0 0 8px #10b981;
   display: inline-block;
-  animation: pulse-emerald 2s infinite ease-in-out;
-}
-
-@keyframes pulse-emerald {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-  70% { transform: scale(1.1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
 }
 
 .daily-timer-divider {
-  color: #64553b;
+  color: #634d2a;
   font-weight: 700;
 }
